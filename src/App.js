@@ -1,11 +1,12 @@
 import "./App.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-center">LOLOLOLOL</h1>
+    <div className="text-center">
+      <Home />
     </div>
   );
 }
