@@ -15,12 +15,12 @@ function Header() {
     <>
     <div className="bg-[#252B42] py-3 px-[24px] text-white text-[14px] font-bold flex flex-wrap justify-between font-[Montserrat] gap-y-2">
         <div className='flex gap-4 items-center mr-4'>
-          <div className='flex items-center gap-1'>
-            <FontAwesomeIcon icon={faPhone} style={{color: "#ffffff",}} />
+          <div className='flex items-center gap-2'>
+            <FontAwesomeIcon icon={faPhone} style={{color: "#ffffff", width:"16px"}} />
             <p>(225) 555-0118</p>
           </div>
-          <div className='flex items-center gap-1'>
-            <FontAwesomeIcon icon={faEnvelope} style={{color: "#ffffff",}} />
+          <div className='flex items-center gap-2'>
+            <FontAwesomeIcon icon={faEnvelope} style={{color: "#ffffff", width: "16px"}} />
             <p>michelle.rivera@example.com</p>
             </div>
         </div>

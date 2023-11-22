@@ -11,13 +11,13 @@ function NavBar() {
     <div className='flex flex-wrap pl-[38px] pr-[17px] justify-between py-[12px] gap-y-2'>
       <div className='flex flex-wrap items-center gap-y-2'>
     <h1 className='font-bold text-[24px] pr-[79px]'>Bandage</h1>
-    <div className='gap-4 flex'>
-      <NavLink to="/" className="text-[14px] font-bold text-[#737373]">Home</NavLink>
-      <NavLink to="/" className="text-[14px] font-bold text-[#737373]" >Shop</NavLink>
-      <NavLink to="/" className="text-[14px] font-bold text-[#737373]">About</NavLink>
-      <NavLink to="/" className="text-[14px] font-bold text-[#737373]">Blog</NavLink>
-      <NavLink to="/" className="text-[14px] font-bold text-[#737373]">Contact</NavLink>
-      <NavLink to="/" className="text-[14px] font-bold text-[#737373]">Pages</NavLink>
+    <div className='gap-4 flex mr-[14px]'>
+      <NavLink to="/" className="nav-bar-links">Home</NavLink>
+      <NavLink to="/" className="nav-bar-links" >Shop</NavLink>
+      <NavLink to="/about" className="nav-bar-links">About</NavLink>
+      <NavLink to="/blog" className="nav-bar-links">Blog</NavLink>
+      <NavLink to="/" className="nav-bar-links">Contact</NavLink>
+      <NavLink to="/" className="nav-bar-links">Pages</NavLink>
     </div>
     </div>
     <div className='flex items-center gap-8'>
