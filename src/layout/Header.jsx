@@ -12,7 +12,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Header() {
   return (
-    <div className="bg-[#252B42] py-3 px-[24px] text-white text-[14px] font-bold flex flex-wrap justify-between font-[Montserrat] fixed w-screen gap-y-2">
+    <>
+    <div className="bg-[#252B42] py-3 px-[24px] text-white text-[14px] font-bold flex flex-wrap justify-between font-[Montserrat] gap-y-2">
         <div className='flex gap-4 items-center mr-4'>
           <div className='flex items-center gap-1'>
             <FontAwesomeIcon icon={faPhone} style={{color: "#ffffff",}} />
@@ -33,7 +34,10 @@ function Header() {
             <a href="#"><FontAwesomeIcon icon={faFacebook} size="lg" style={{color: "#ffffff",}} /></a>
             <a href="#"><FontAwesomeIcon icon={faTwitter} size="lg" style={{color: "#ffffff",}} /></a>
         </div>
+        
     </div>
+    
+    </>
   )
 }
 
