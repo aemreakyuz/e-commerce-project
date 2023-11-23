@@ -1,34 +1,34 @@
-
-import React, { useState } from 'react';
-import { Images } from '../assets/Images';
+import React, { useState } from "react";
+import { Images } from "../assets/Images";
 import {
   Carousel,
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
   CarouselCaption,
-} from 'reactstrap';
+} from "reactstrap";
 
 const items = [
   {
     src: Images.sliders.slider1,
-    collection : "SUMMER 2020",
+    collection: "SUMMER 2020",
     header: "NEW COLLECTION",
-    description: "We know how large objects will act, but things on a small scale.",
-    altText: 'Slide 1',
-    caption: 'Slide 1',
+    description:
+      "We know how large objects will act, but things on a small scale.",
+    altText: "Slide 1",
+    caption: "Slide 1",
     key: 1,
   },
   {
     src: Images.sliders.slider1,
-    collection : "SUMMER 2020",
+    collection: "SUMMER 2020",
     header: "NEW COLLECTION",
-    description: "We know how large objects will act, but things on a small scale.",
-    altText: 'Slide 1',
-    caption: 'Slide 1',
+    description:
+      "We know how large objects will act, but things on a small scale.",
+    altText: "Slide 1",
+    caption: "Slide 1",
     key: 1,
   },
-  
 ];
 
 function TopSlider(args) {
@@ -54,24 +54,35 @@ function TopSlider(args) {
 
   const slides = items.map((item) => {
     return (
-        <CarouselItem
+      <CarouselItem
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
         key={item.key}
-    >
+      >
         <div className="flex items-center justify-start relative">
-            <div className='w-full'>
-                <img src={item.src} alt={item.altText} className='w-full h-screen object-cover' />
-            </div>
-            <div className=' flex flex-col gap-9 my-9 ml-[15%] absolute'>
-                <h5 className="text-white text-base font-bold leading-normal tracking-tight">{item.collection}</h5>
-                <h1 className='text-white text-6xl font-bold leading-normal tracking-tight'>{item.header}</h1>
-                <h4 className='text-neutral-50 text-[20px] font-normal leading-8 tracking-tight w-[60%]'>{item.description}</h4>
-                <button className='bg-[#2DC071] px-[2.5rem] py-[1rem] w-[50%] text-center rounded text-white text-2xl font-bold leading-loose tracking-tight'>SHOP NOW</button>
-            </div>
-            <div></div>
+          <div className="w-full">
+            <img
+              src={item.src}
+              alt={item.altText}
+              className="w-full h-screen object-cover"
+            />
+          </div>
+          <div className=" flex flex-col gap-9 my-9 ml-[15%] absolute">
+            <h5 className="text-white text-base font-bold leading-normal tracking-tight">
+              {item.collection}
+            </h5>
+            <h1 className="text-white text-6xl font-bold leading-normal tracking-tight">
+              {item.header}
+            </h1>
+            <h4 className="text-neutral-50 text-[20px] font-normal leading-8 tracking-tight w-[60%]">
+              {item.description}
+            </h4>
+            <button className="bg-[#2DC071] px-[2.5rem] py-[1rem] w-[50%] text-center rounded text-white text-2xl font-bold leading-loose tracking-tight">
+              SHOP NOW
+            </button>
+          </div>
         </div>
-    </CarouselItem>
+      </CarouselItem>
     );
   });
 
