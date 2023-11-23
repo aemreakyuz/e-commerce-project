@@ -59,7 +59,7 @@ function BottomSlider(args) {
         onExited={() => setAnimating(false)}
         key={item.key}
       >
-        <div className="flex items-center justify-start relative bg-[#23856D] h-[711px] relative">
+        <div className="flex items-center justify-start relative bg-[#23856D] h-[711px] ">
           <div className="w-full">
             <img
               src={item.src}
