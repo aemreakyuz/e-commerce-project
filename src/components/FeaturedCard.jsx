@@ -31,8 +31,7 @@ function FeaturedCard({ post }) {
             {post.header}
           </h2>
           <p className="text-[#737373] text-[14px] leading-[20px] w-[90%] font-normal">
-            We focus on ergonomics and meeting you where you work. It's only a
-            keystroke away.
+            {post.description}
           </p>
           <div className="flex justify-between text-[12px] text-[#737373] py-[15px]">
             <div className="flex gap-[5px] items-center">

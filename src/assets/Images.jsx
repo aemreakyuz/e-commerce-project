@@ -18,10 +18,25 @@ import featured2 from "../assets/images/featuredImages/home.png";
 import featured3 from "../assets/images/featuredImages/umbrella.png";
 import vectorArrow from "../assets/shapes/icon arrow-next.svg";
 
+import hooli from "../assets/icons/Vector.png";
+import lyft from "../assets/icons/Vector-1.png";
+import spring from "../assets/icons/col-md-2.png";
+import stripe from "../assets/icons/Vector-2.png";
+import amazon from "../assets/icons/Vector-3.png";
+import reddit from "../assets/icons/Vector-4.png";
+
 export const Images = {
   sliders: {
     slider1,
     slider2,
+  },
+  icons: {
+    hooli,
+    lyft,
+    spring,
+    stripe,
+    amazon,
+    reddit,
   },
   shapes: {
     ellipses: {
