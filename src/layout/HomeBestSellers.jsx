@@ -1,6 +1,6 @@
 import React from "react";
 import { Images } from "../assets/Images";
-import HomeBestSellerCard from "./HomeBestSellerCard";
+import HomeBestSellerCard from "../components/HomeBestSellerCard";
 
 function HomeBestSellers() {
   return (
