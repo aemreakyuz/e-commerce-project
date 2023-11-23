@@ -68,18 +68,18 @@ function BottomSlider(args) {
             />
           </div>
           <div className=" flex flex-col gap-9 my-9 ml-[15%] absolute">
-            <h5 className="text-white text-base font-bold leading-normal tracking-tight">
+            <h5 className="text-white text-base font-bold leading-normal ">
               {item.collection}
             </h5>
-            <h1 className="text-white text-[58px] font-bold leading-normal tracking-tight w-[80%]">
+            <h1 className="text-white text-[58px] font-bold leading-normal  w-[80%]">
               {item.header}
             </h1>
-            <h4 className="text-neutral-50 text-[14px] font-normal leading-[20px] tracking-tight w-[60%]">
+            <h4 className="text-neutral-50 text-[14px] font-normal leading-[20px]  w-[60%]">
               {item.description}
             </h4>
             <div className="flex items-center gap-[34px]">
               <p className="text-[24px] text-white font-bold">$16.48</p>
-              <button className="bg-[#2DC071] px-[40px] py-[15px]  text-center rounded text-white text-2xl font-bold leading-loose tracking-tight">
+              <button className="bg-[#2DC071] px-[40px] py-[15px]  text-center rounded text-white text-2xl font-bold leading-loose ">
                 ADD TO CART
               </button>
             </div>
