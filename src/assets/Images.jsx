@@ -13,6 +13,11 @@ import productCard6 from "../assets/images/productImages/product-cover-5-6.png";
 import productCard7 from "../assets/images/productImages/product-cover-5-7.png";
 import productCard8 from "../assets/images/productImages/product-cover-5.png";
 
+import featured1 from "../assets/images/featuredImages/car.png";
+import featured2 from "../assets/images/featuredImages/home.png";
+import featured3 from "../assets/images/featuredImages/umbrella.png";
+import vectorArrow from "../assets/shapes/icon arrow-next.svg";
+
 export const Images = {
   sliders: {
     slider1,
@@ -25,6 +30,9 @@ export const Images = {
       orangeEllipse,
       blackEllipse,
     },
+    vectors: {
+      vectorArrow,
+    },
   },
   homeProductCard: {
     productCard1,
@@ -35,5 +43,11 @@ export const Images = {
     productCard6,
     productCard7,
     productCard8,
+  },
+
+  featuredPosts: {
+    featured1,
+    featured2,
+    featured3,
   },
 };
