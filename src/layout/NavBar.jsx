@@ -15,7 +15,7 @@ function NavBar() {
           <NavLink to="/" className="nav-bar-links">
             Home
           </NavLink>
-          <NavLink to="/" className="nav-bar-links">
+          <NavLink to="/productlist" className="nav-bar-links">
             Shop
           </NavLink>
           <NavLink to="/about" className="nav-bar-links">

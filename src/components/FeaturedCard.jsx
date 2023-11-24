@@ -7,7 +7,7 @@ import { faComments } from "@fortawesome/free-solid-svg-icons";
 
 function FeaturedCard({ post }) {
   return (
-    <div className="w-[348px] flex flex-col">
+    <div className="w-[348px] flex flex-col shadow-[0px_2px_4px_rgba(0,0,0,0.1)]">
       <img src={post.img} className="" alt="" />
       <div className="p-[25px] flex flex-col gap-[10px]">
         <div className="flex gap-[15px]  ">

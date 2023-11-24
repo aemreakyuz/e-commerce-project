@@ -77,9 +77,12 @@ function TopSlider(args) {
             <h4 className="text-neutral-50 text-[20px] font-normal leading-8 w-[60%]">
               {item.description}
             </h4>
-            <button className="bg-[#2DC071] px-[2.5rem] py-[1rem] w-[50%] text-center rounded text-white text-2xl font-bold leading-loose">
+            <a
+              href="/productlist"
+              className="bg-[#2DC071] px-[2.5rem] py-[1rem] w-[50%] text-center rounded text-white text-2xl font-bold leading-loose hover:bg-[#23856D]  duration-300 "
+            >
               SHOP NOW
-            </button>
+            </a>
           </div>
         </div>
       </CarouselItem>

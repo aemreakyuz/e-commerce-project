@@ -25,6 +25,19 @@ import stripe from "../assets/icons/Vector-2.png";
 import amazon from "../assets/icons/Vector-3.png";
 import reddit from "../assets/icons/Vector-4.png";
 
+import productList1 from "../assets/images/productList/fixed-height-1.png";
+import productList2 from "../assets/images/productList/fixed-height-2.png";
+import productList3 from "../assets/images/productList/fixed-height-3.png";
+import productList4 from "../assets/images/productList/fixed-height-4.png";
+import productList5 from "../assets/images/productList/fixed-height-5.png";
+import productList6 from "../assets/images/productList/fixed-height-6.png";
+import productList7 from "../assets/images/productList/fixed-height-7.png";
+import productList8 from "../assets/images/productList/fixed-height-8.png";
+import productList9 from "../assets/images/productList/fixed-height-9.png";
+import productList10 from "../assets/images/productList/fixed-height-10.png";
+import productList11 from "../assets/images/productList/fixed-height.png";
+import productList12 from "../assets/images/productList/product-cover-5.png";
+
 export const Images = {
   sliders: {
     slider1,
@@ -64,5 +77,19 @@ export const Images = {
     featured1,
     featured2,
     featured3,
+  },
+  productList: {
+    productList1,
+    productList2,
+    productList3,
+    productList4,
+    productList5,
+    productList6,
+    productList7,
+    productList8,
+    productList9,
+    productList10,
+    productList11,
+    productList12,
   },
 };

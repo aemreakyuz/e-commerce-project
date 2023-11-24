@@ -5,11 +5,12 @@ import Home from "./pages/Home";
 import { Link, Switch, Route } from "react-router-dom/cjs/react-router-dom.min";
 import Contact from "./pages/Contact";
 import Product from "./pages/Product";
-import ProductList from "./pages/ProductList";
+
 import Team from "./pages/Team";
 import Pricing from "./pages/Pricing";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
+import ProductListPage from "./pages/ProductList";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
           <Product />
         </Route>
         <Route path="/productList">
-          <ProductList />
+          <ProductListPage />
         </Route>
         <Route path="/pricing">
           <Pricing />
