@@ -6,7 +6,7 @@ function ProductList() {
   const products = Data.productList;
 
   return (
-    <div className="flex flex-wrap gap-10 items-center justify-center">
+    <div className="flex flex-wrap gap-[48px] items-center justify-center w-[75%] py-[48px] m-auto">
       {products.map((product) => {
         return <ProductListCard product={product} />;
       })}

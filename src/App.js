@@ -10,7 +10,7 @@ import Team from "./pages/Team";
 import Pricing from "./pages/Pricing";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
-import ProductListPage from "./pages/ProductList";
+import ProductListPage from "./pages/ProductListPage";
 
 function App() {
   return (

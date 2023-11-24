@@ -13,9 +13,7 @@ function ProductListPage() {
     <div className="">
       <Header />
       <NavBar />
-      <div className="flex gap-[15px]  flex-wrap justify-center ">
-        <ProductList />
-      </div>
+      <ProductList />
       <Icons />
       <Footer />
     </div>
