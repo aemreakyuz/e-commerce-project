@@ -1,16 +1,12 @@
 import React from "react";
-import { Data } from "../assets/Data";
 
 function ProductListCard({ product }) {
-  if (!product) {
-    return <div>Product data is missing</div>;
-  }
   return (
     <div className="flex flex-col ">
       <img
         src={product.img}
         alt={product.name}
-        className="w-[239px] h-[427px] object-cover"
+        className="w-[239px] h-[300px] object-cover"
       />
       <div className="flex flex-col items-center  gap-[10px] p-[25px]">
         <h5 className="text-[16px] font-semibold">{product.collection}</h5>

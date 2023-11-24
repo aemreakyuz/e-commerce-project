@@ -39,6 +39,12 @@ import productList10 from "../assets/images/productList/fixed-height-10.png";
 import productList11 from "../assets/images/productList/fixed-height.png";
 import productList12 from "../assets/images/productList/product-cover-5.png";
 
+import category1 from "../assets/images/categories/card-cover-5.png";
+import category2 from "../assets/images/categories/media bg-cover.png";
+import category3 from "../assets/images/categories/media bg-cover2.png";
+import category4 from "../assets/images/categories/media bg-cover3.png";
+import category5 from "../assets/images/categories/media bg-cover4.png";
+
 export const Images = {
   sliders: {
     slider1,
@@ -63,6 +69,13 @@ export const Images = {
       vectorArrow,
       nextVector,
     },
+  },
+  categories: {
+    category1,
+    category2,
+    category3,
+    category4,
+    category5,
   },
   homeProductCard: {
     productCard1,

@@ -145,6 +145,33 @@ export const Data = {
       comments: "10 comments",
     },
   },
+  categories: [
+    {
+      category: "CLOTHS",
+      number: "14 items",
+      img: Images.categories.category1,
+    },
+    {
+      category: "JEANS",
+      number: "5 items",
+      img: Images.categories.category2,
+    },
+    {
+      category: "COATS",
+      number: "12 items",
+      img: Images.categories.category3,
+    },
+    {
+      category: "SWEATSHIRTS",
+      number: "16 items",
+      img: Images.categories.category4,
+    },
+    {
+      category: "T-SHIRTS",
+      number: "24 items",
+      img: Images.categories.category5,
+    },
+  ],
   productList: [
     {
       name: "Graphic Design",

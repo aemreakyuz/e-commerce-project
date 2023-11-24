@@ -9,6 +9,7 @@ import ProductList from "../layout/ProductList";
 import { Data } from "../assets/Data";
 import PaginationCmp from "../components/PaginationCmp";
 import { Images } from "../assets/Images";
+import Categories from "../layout/Categories";
 
 function ProductListPage() {
   return (
@@ -23,6 +24,7 @@ function ProductListPage() {
           <p className="text-[#BDBDBD] text-[14px] font-bold">Shop</p>
         </div>
       </div>
+      <Categories />
       <ProductList />
       <PaginationCmp />
       <Icons />
