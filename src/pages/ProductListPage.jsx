@@ -7,6 +7,7 @@ import Icons from "../components/Icons";
 import ProductListCard from "../components/ProductListCard";
 import ProductList from "../layout/ProductList";
 import { Data } from "../assets/Data";
+import PaginationCmp from "../components/PaginationCmp";
 
 function ProductListPage() {
   return (
@@ -14,6 +15,7 @@ function ProductListPage() {
       <Header />
       <NavBar />
       <ProductList />
+      <PaginationCmp />
       <Icons />
       <Footer />
     </div>
