@@ -14,7 +14,7 @@ export default function PaginationCmp() {
       <PaginationItem>
         <PaginationLink
           href="#"
-          className="p-[25px] text-sm text-stone-300 bg-stone-50"
+          className="p-[25px] text-sm text-stone-300 bg-white text-[#23A6F0]"
           onClick={() => handleClick(1)}
         >
           First
