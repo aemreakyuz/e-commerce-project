@@ -17,6 +17,7 @@ import featured1 from "../assets/images/featuredImages/car.png";
 import featured2 from "../assets/images/featuredImages/home.png";
 import featured3 from "../assets/images/featuredImages/umbrella.png";
 import vectorArrow from "../assets/shapes/icon arrow-next.svg";
+import nextVector from "../assets/shapes/icn arrow-right icn-xs.svg";
 
 import hooli from "../assets/icons/Vector.png";
 import lyft from "../assets/icons/Vector-1.png";
@@ -60,6 +61,7 @@ export const Images = {
     },
     vectors: {
       vectorArrow,
+      nextVector,
     },
   },
   homeProductCard: {
