@@ -8,8 +8,8 @@ import { faHeart } from "@fortawesome/free-regular-svg-icons";
 
 function NavBar() {
   return (
-    <div className="flex flex-wrap pl-[38px] pr-[17px] justify-between py-[12px] gap-y-2">
-      <div className="flex flex-wrap items-center gap-y-2">
+    <div className="flex flex-wrap pl-[38px] pr-[17px] justify-between py-[12px] gap-y-2 ">
+      <div className="flex flex-wrap items-center gap-y-2 ">
         <h1 className="font-bold text-[24px] pr-[79px]">Bandage</h1>
         <div className="gap-4 flex mr-[14px]">
           <NavLink to="/" className="nav-bar-links">

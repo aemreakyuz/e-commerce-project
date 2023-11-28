@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {
   return (
-    <div className="w-screen">
+    <div className="">
       <div className="bg-[#FAFAFA] py-[60px]">
         <div className="flex justify-between w-[80%] m-auto">
           <h3 className="text-[24px] font-bold ">Bandage</h3>
@@ -125,7 +125,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-full py-[25px]  bg-[#FAFAFA]">
+      <div className=" py-[25px]  bg-[#FAFAFA]">
         <p className="m-auto w-[80%]  text-[#737373] font-bold">
           Made With Love By Finland All Right Reserved
         </p>
