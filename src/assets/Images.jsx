@@ -54,8 +54,30 @@ import team6 from "../assets/images/teamImages/team-1-user-2.jpg";
 import team7 from "../assets/images/teamImages/team-1-user-3-1.jpg";
 import team8 from "../assets/images/teamImages/team-1-user-3-2.jpg";
 import team9 from "../assets/images/teamImages/team-1-user-3.jpg";
+import teamPage1 from "../assets/images/teamImages/unsplash_1-aA2Fadydc.png";
+import teamPage2 from "../assets/images/teamImages/unsplash_gMsnXqILjp4.png";
+import teamPage3 from "../assets/images/teamImages/unsplash_Lks7vei-eAg.png";
+import teamPage4 from "../assets/images/teamImages/unsplash_mcSDtbWXUZU.png";
+import teamPage5 from "../assets/images/teamImages/unsplash_PSmDDeXaEWE.png";
+
+import {
+  faTwitter,
+  faFacebook,
+  faInstagram,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 
 export const Images = {
+  socials: [faTwitter, faFacebook, faInstagram, faLinkedinIn],
+
+  teamPage: {
+    teamPage1,
+    teamPage2,
+    teamPage3,
+    teamPage4,
+    teamPage5,
+  },
+
   teamMembers: {
     team1,
     team2,

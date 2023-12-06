@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 function TeamCard({ teamMember }) {
@@ -15,9 +16,15 @@ function TeamCard({ teamMember }) {
         <h3 className="text-[#737373] text-[14px] font-bold">
           {teamMember.role}
         </h3>
-        <div className="flex">
+        <div className="flex gap-[20px]">
           {teamMember.socials.map((social) => {
-            return <img src={social} alt="social" />;
+            return (
+              <FontAwesomeIcon
+                icon={social}
+                alt="social"
+                className="text-[#23A6F0]"
+              />
+            );
           })}
         </div>
       </div>
