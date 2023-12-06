@@ -8,7 +8,7 @@ function CategoryCard({ category }) {
     >
       <p className="text-white text-base font-bold  ">{category.category}</p>
       <p className="text-white text-sm font-normal  ">{category.number}</p>
-      <div className="bg-neutral-800 bg-opacity-25 absolute w-full h-full"></div>
+      <div className="bg-neutral-900 bg-opacity-25 absolute w-full h-full"></div>
     </div>
   );
 }

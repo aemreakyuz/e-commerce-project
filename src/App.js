@@ -11,8 +11,11 @@ import Team from "./pages/Team";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
 import ProductListPage from "./pages/ProductListPage";
+import { Data } from "./assets/Data";
 
 function App() {
+  const teamMember = Data.team;
+
   return (
     <div>
       <Switch>
@@ -23,7 +26,7 @@ function App() {
           <Contact />
         </Route>
         <Route path="/about">
-          <About />
+          <About teamMember={teamMember} />
         </Route>
         <Route path="/product">
           <Product />
@@ -33,7 +36,7 @@ function App() {
         </Route>
 
         <Route path="/team">
-          <Team />
+          <Team teamMember={teamMember} />
         </Route>
         <Route path="/blog">
           <Blog />

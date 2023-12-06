@@ -7,7 +7,7 @@ import { Data } from "../assets/Data.jsx";
 import TeamCard from "../components/TeamCard.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Team() {
+function Team({ teamMember }) {
   const teamMembers = Data.team;
   return (
     <div>
@@ -70,8 +70,8 @@ function Team() {
       <div className="py-[112px] w-[80%] mx-auto flex flex-col gap-[112px] items-center">
         <h2 className="text-[#252B42] text-[40px] font-bold">Meet Our Team</h2>
         <div className="flex flex-wrap justify-center gap-[30px]  ">
-          {teamMembers.map((teamMember) => {
-            return <TeamCard teamMember={teamMember} />;
+          {teamMember.map((teamMember, index) => {
+            return <TeamCard teamMember={teamMember} key={index} />;
           })}
         </div>
       </div>
