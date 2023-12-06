@@ -60,6 +60,8 @@ import teamPage3 from "../assets/images/teamImages/unsplash_Lks7vei-eAg.png";
 import teamPage4 from "../assets/images/teamImages/unsplash_mcSDtbWXUZU.png";
 import teamPage5 from "../assets/images/teamImages/unsplash_PSmDDeXaEWE.png";
 
+import about from "../assets/images/aboutpage/about.png";
+
 import {
   faTwitter,
   faFacebook,
@@ -69,6 +71,10 @@ import {
 
 export const Images = {
   socials: [faTwitter, faFacebook, faInstagram, faLinkedinIn],
+
+  aboutPage: {
+    about,
+  },
 
   teamPage: {
     teamPage1,

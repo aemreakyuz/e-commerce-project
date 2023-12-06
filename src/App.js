@@ -8,7 +8,6 @@ import Product from "./pages/Product";
 
 import Team from "./pages/Team";
 
-import Blog from "./pages/Blog";
 import About from "./pages/About";
 import ProductListPage from "./pages/ProductListPage";
 import { Data } from "./assets/Data";
@@ -34,12 +33,8 @@ function App() {
         <Route path="/productList">
           <ProductListPage />
         </Route>
-
         <Route path="/team">
           <Team teamMember={teamMember} />
-        </Route>
-        <Route path="/blog">
-          <Blog />
         </Route>
       </Switch>
     </div>
