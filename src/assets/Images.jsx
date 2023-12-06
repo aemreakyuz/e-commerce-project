@@ -61,6 +61,7 @@ import teamPage4 from "../assets/images/teamImages/unsplash_mcSDtbWXUZU.png";
 import teamPage5 from "../assets/images/teamImages/unsplash_PSmDDeXaEWE.png";
 
 import about from "../assets/images/aboutpage/about.png";
+import aboutHeader from "../assets/images/aboutpage/about-us-bg.png";
 import aboutBg from "../assets/images/aboutpage/unsplash_T_Qe4QlMIvQ.png";
 
 import {
@@ -74,6 +75,7 @@ export const Images = {
   socials: [faTwitter, faFacebook, faInstagram, faLinkedinIn],
 
   aboutPage: {
+    aboutHeader,
     about,
     aboutBg,
   },
