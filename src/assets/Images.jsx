@@ -45,7 +45,28 @@ import category3 from "../assets/images/categories/media bg-cover2.png";
 import category4 from "../assets/images/categories/media bg-cover3.png";
 import category5 from "../assets/images/categories/media bg-cover4.png";
 
+import team1 from "../assets/images/teamImages/team-1-user-1-1.jpg";
+import team2 from "../assets/images/teamImages/team-1-user-1-2.jpg";
+import team3 from "../assets/images/teamImages/team-1-user-1.jpg";
+import team4 from "../assets/images/teamImages/team-1-user-2-1.jpg";
+import team5 from "../assets/images/teamImages/team-1-user-2-2.jpg";
+import team6 from "../assets/images/teamImages/team-1-user-2.jpg";
+import team7 from "../assets/images/teamImages/team-1-user-3-1.jpg";
+import team8 from "../assets/images/teamImages/team-1-user-3-2.jpg";
+import team9 from "../assets/images/teamImages/team-1-user-3.jpg";
+
 export const Images = {
+  teamMembers: {
+    team1,
+    team2,
+    team3,
+    team4,
+    team5,
+    team6,
+    team7,
+    team8,
+    team9,
+  },
   sliders: {
     slider1,
     slider2,

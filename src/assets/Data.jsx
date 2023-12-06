@@ -1,6 +1,67 @@
 import { Images } from "./Images";
+import {
+  faTwitter,
+  faInstagram,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
 
 export const Data = {
+  team: [
+    {
+      img: Images.teamMembers.team1,
+      name: "Username",
+      role: "Profession",
+      socials: [faFacebook, faInstagram, faTwitter],
+    },
+    {
+      img: Images.teamMembers.team2,
+      name: "Username",
+      role: "Profession",
+      socials: [faFacebook, faInstagram, faTwitter],
+    },
+    {
+      img: Images.teamMembers.team3,
+      name: "Username",
+      role: "Profession",
+      socials: [faFacebook, faInstagram, faTwitter],
+    },
+    {
+      img: Images.teamMembers.team4,
+      name: "Username",
+      role: "Profession",
+      socials: [faFacebook, faInstagram, faTwitter],
+    },
+    {
+      img: Images.teamMembers.team5,
+      name: "Username",
+      role: "Profession",
+      socials: [faFacebook, faInstagram, faTwitter],
+    },
+    {
+      img: Images.teamMembers.team6,
+      name: "Username",
+      role: "Profession",
+      socials: [faFacebook, faInstagram, faTwitter],
+    },
+    {
+      img: Images.teamMembers.team7,
+      name: "Username",
+      role: "Profession",
+      socials: [faFacebook, faInstagram, faTwitter],
+    },
+    {
+      img: Images.teamMembers.team8,
+      name: "Username",
+      role: "Profession",
+      socials: [faFacebook, faInstagram, faTwitter],
+    },
+    {
+      img: Images.teamMembers.team9,
+      name: "Username",
+      role: "Profession",
+      socials: [faFacebook, faInstagram, faTwitter],
+    },
+  ],
   bestSellers: [
     {
       img: Images.homeProductCard.productCard1,
