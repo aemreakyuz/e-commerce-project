@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 import Product from "./pages/Product";
 
 import Team from "./pages/Team";
-import Pricing from "./pages/Pricing";
+
 import Blog from "./pages/Blog";
 import About from "./pages/About";
 import ProductListPage from "./pages/ProductListPage";
@@ -31,9 +31,7 @@ function App() {
         <Route path="/productList">
           <ProductListPage />
         </Route>
-        <Route path="/pricing">
-          <Pricing />
-        </Route>
+
         <Route path="/team">
           <Team />
         </Route>

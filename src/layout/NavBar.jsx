@@ -24,6 +24,9 @@ function NavBar() {
           <NavLink to="/blog" className="nav-bar-links">
             Blog
           </NavLink>
+          <NavLink to="/team" className="nav-bar-links">
+            Team
+          </NavLink>
           <NavLink to="/contact" className="nav-bar-links">
             Contact
           </NavLink>

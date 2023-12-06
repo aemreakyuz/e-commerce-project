@@ -27,7 +27,7 @@ function Contact() {
                   <address className="tetx-[20px]">
                     1901 Thorn Ridge Cir.
                   </address>
-                  <div className="border-1 border-solid border-[#23A6F0] w-[58px]"></div>
+                  <div className="border-1 border-solid border-[#23A6F0] w-[58px] mb-[16px]"></div>
                   <address>7500 Paris</address>
                   <address>Phone : +451 215 215 </address>
                   <address>Fax : +451 215 215</address>
@@ -39,7 +39,7 @@ function Contact() {
                   <address className="tetx-[20px]">
                     2715 Ash Dr. San Jose,
                   </address>
-                  <div className="border-1 border-solid border-[#23A6F0] w-[58px]"></div>
+                  <div className="border-1 border-solid border-[#23A6F0] w-[58px] mb-[16px]"></div>
                   <address>7500 Paris</address>
                   <address>Phone : +451 215 215 </address>
                   <address>Fax : +451 215 215</address>
@@ -51,7 +51,7 @@ function Contact() {
                   <address className="tetx-[20px]">
                     1901 Thorn Ridge Cir.
                   </address>
-                  <div className="border-1 border-solid border-[#23A6F0] w-[58px]"></div>
+                  <div className="border-1 border-solid border-[#23A6F0] w-[58px] mb-[16px]"></div>
                   <address>7500 Paris</address>
                   <address>Phone : +451 215 215 </address>
                   <address>Fax : +451 215 215</address>
@@ -63,7 +63,7 @@ function Contact() {
                   <address className="tetx-[20px]">
                     3517 W. Gray St. Utica,{" "}
                   </address>
-                  <div className="border-1 border-solid border-[#23A6F0] w-[58px]"></div>
+                  <div className="border-1 border-solid border-[#23A6F0] w-[58px] mb-[16px]"></div>
                   <address>7500 Paris</address>
                   <address>Phone : +451 215 215 </address>
                   <address>Fax : +451 215 215</address>
