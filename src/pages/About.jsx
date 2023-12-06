@@ -6,13 +6,18 @@ import Icons from "../components/Icons";
 import TeamCard from "../components/TeamCard";
 import { Data } from "../assets/Data";
 import { Images } from "../assets/Images";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import VideoPlayer from "../components/VideoPlayer";
 
 function About({ teamMember }) {
   const threeMembers = teamMember.slice(0, 3);
+
   return (
     <div>
       <Header />
       <NavBar />
+      <VideoPlayer />
 
       <div className="flex flex-col gap-[112px] py-[112px]">
         <div className="flex flex-col gap-[10px] items-center">
