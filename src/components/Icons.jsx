@@ -13,7 +13,7 @@ function Icons() {
 
   return (
     <div className="">
-      <div className="flex flex-wrap w-4/5 m-auto justify-between gap-[30px] py-[50px] ">
+      <div className="flex flex-wrap w-4/5 m-auto justify-between gap-[30px] py-[50px] max-sm:flex-col max-sm:w-[150px] max-sm:gap-[60px]">
         {icons.map((icon) => {
           return <img src={icon} className="px-[25px]" alt="" />;
         })}

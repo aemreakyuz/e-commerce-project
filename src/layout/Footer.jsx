@@ -125,7 +125,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className=" py-[25px]  bg-[#FAFAFA]">
+      <div className=" py-[25px]  bg-[#FAFAFA] max-sm:text-center max-sm:px-[80px]">
         <p className="m-auto w-[80%]  text-[#737373] font-bold">
           Made With Love By Finland All Right Reserved
         </p>

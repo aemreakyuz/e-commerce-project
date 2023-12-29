@@ -19,7 +19,7 @@ function ProductListPage() {
     <div className="">
       <Header />
       <NavBar />
-      <div className=" flex justify-around items-center py-[24px] bg-[#FAFAFA]">
+      <div className=" flex justify-around items-center py-[24px] bg-[#FAFAFA] max-sm:flex-col max-sm:gap-8">
         <h2 className="text-[#252B42] text-[24px] font-bold">Shop</h2>
         <div className="flex gap-[15px]">
           <p className="text-[#252B42] text-[14px] font-bold">Home</p>
@@ -28,7 +28,7 @@ function ProductListPage() {
         </div>
       </div>
       <Categories />
-      <div className="flex justify-between py-[24px] items-center w-[80%] mx-auto">
+      <div className="flex justify-between py-[24px] items-center w-[80%] mx-auto max-sm:flex-col max-sm:gap-[24px]">
         <p className="text-[#737373] font-bold">Showing all 12 results</p>
         <div className="flex items-center gap-3">
           <p className="text-neutral-500 text-sm font-bold">Views:</p>
