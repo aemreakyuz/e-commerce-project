@@ -76,7 +76,7 @@ function Team({ teamMember }) {
         </div>
       </div>
       <div className="flex flex-col gap-[30px] items-center  mx-auto py-[80px]">
-        <h2 className="text-[#252B42] text-[40px] font-bold text-center">
+        <h2 className="text-[#252B42] text-[40px] font-bold text-center max-sm:w-4/5">
           Start your 14 days free trial
         </h2>
         <h4 className="w-[50%] text-center text-[#737373] text-[14px] leading-[20px]">
