@@ -59,25 +59,32 @@ function BottomSlider(args) {
         onExited={() => setAnimating(false)}
         key={item.key}
       >
-        <div className="flex items-center justify-start relative bg-[#23856D] h-[711px] ">
+        <div className="flex items-center justify-start relative bg-[#23856D] h-[711px] max-sm:h-[1300px] max-sm:items-start max-sm:py-[112px] ">
           <div className="w-full">
             <img
               src={item.src}
               alt={item.altText}
-              className="w-[443px] h-[685px] absolute top-[86px] right-[215px]"
+              className="w-[443px] h-[685px] absolute top-[86px] right-[215px] max-sm:hidden "
             />
           </div>
-          <div className=" flex flex-col gap-9 my-9 ml-[15%] absolute">
+          <div className=" flex flex-col gap-9 my-9 ml-[15%] absolute max-sm:mx-auto max-sm:items-center max-sm:my-0">
             <h5 className="text-white text-base font-bold leading-normal ">
               {item.collection}
             </h5>
             <h1 className="text-white text-[58px] font-bold leading-normal  w-[80%]">
               {item.header}
             </h1>
-            <h4 className="text-neutral-50 text-[14px] font-normal leading-[20px]  w-[60%]">
+            <h4 className="text-neutral-50 text-[14px] font-normal leading-[20px] w-[60%]">
               {item.description}
             </h4>
-            <div className="flex items-center gap-[34px]">
+            <div className="w-full sm:hidden">
+              <img
+                src={item.src}
+                alt={item.altText}
+                className="w-[443px] h-[685px] absolute top-[86px] right-[215px] max-sm:right-0 max-sm:top-[600px] "
+              />
+            </div>
+            <div className="flex items-center gap-[34px] max-sm:flex-col">
               <p className="text-[24px] text-white font-bold">$16.48</p>
               <button className="bg-[#2DC071] px-[40px] py-[15px]  text-center rounded text-white text-2xl font-bold leading-loose ">
                 ADD TO CART

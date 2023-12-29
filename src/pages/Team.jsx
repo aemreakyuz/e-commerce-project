@@ -8,9 +8,9 @@ import TeamCard from "../components/TeamCard.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Team({ teamMember }) {
-  const teamMembers = Data.team;
+  const teamMembers = Data.team.slice(0, 3);
   return (
-    <div>
+    <div className="max-sm:mx-auto">
       <Header />
       <NavBar />
       <div></div>
@@ -32,7 +32,7 @@ function Team({ teamMember }) {
           </a>
         </div>
       </div>
-      <div className="flex flex-wrap ">
+      <div className="flex flex-wrap justify-center ">
         <div className="">
           <img
             src={Images.teamPage.teamPage3}
@@ -70,7 +70,7 @@ function Team({ teamMember }) {
       <div className="py-[112px] w-[80%] mx-auto flex flex-col gap-[112px] items-center">
         <h2 className="text-[#252B42] text-[40px] font-bold">Meet Our Team</h2>
         <div className="flex flex-wrap justify-center gap-[30px]  ">
-          {teamMember.map((teamMember, index) => {
+          {teamMembers.map((teamMember, index) => {
             return <TeamCard teamMember={teamMember} key={index} />;
           })}
         </div>

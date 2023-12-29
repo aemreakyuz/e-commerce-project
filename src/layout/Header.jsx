@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Header() {
   return (
     <>
-      <div className="bg-[#23856D] py-3 px-[24px] text-white text-[14px] font-bold flex flex-wrap justify-between font-[Montserrat] gap-y-2 ">
+      <div className="bg-[#23856D] py-3 px-[24px] text-white text-[14px] font-bold flex flex-wrap justify-between font-[Montserrat] gap-y-2 max-sm:hidden">
         <div className="flex gap-4 items-center mr-4">
           <div className="flex items-center gap-2">
             <FontAwesomeIcon

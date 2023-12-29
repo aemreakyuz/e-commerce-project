@@ -4,7 +4,7 @@ import HomeBestSellerCard from "../components/HomeBestSellerCard";
 
 function HomeBestSellers() {
   return (
-    <div className="pl-[195px] pr-[121px] ">
+    <div className="w-[80%] m-auto ">
       <div className="flex flex-col items-center gap-[10px] py-[80px]">
         <h4 className="text-[20px] text-[#737373] text-center">
           Featured Products

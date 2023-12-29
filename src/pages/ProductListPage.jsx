@@ -10,6 +10,9 @@ import { Data } from "../assets/Data";
 import PaginationCmp from "../components/PaginationCmp";
 import { Images } from "../assets/Images";
 import Categories from "../layout/Categories";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBorderAll, faListCheck } from "@fortawesome/free-solid-svg-icons";
+import { Dropdown } from "reactstrap";
 
 function ProductListPage() {
   return (
@@ -25,6 +28,28 @@ function ProductListPage() {
         </div>
       </div>
       <Categories />
+      <div className="flex justify-between py-[24px] items-center w-[80%] mx-auto">
+        <p className="text-[#737373] font-bold">Showing all 12 results</p>
+        <div className="flex items-center gap-3">
+          <p className="text-neutral-500 text-sm font-bold">Views:</p>
+          <FontAwesomeIcon
+            icon={faBorderAll}
+            className="p-2 border rounded cursor-pointer"
+          />
+          <FontAwesomeIcon
+            icon={faListCheck}
+            className="p-2 border rounded cursor-pointer"
+          />
+        </div>
+        <div className="flex items-center gap-[15px]">
+          <div className="border rounded px-[20px] py-[10px] text-sm text-[#737373] bg-[#F9F9F9]">
+            Popularity
+          </div>
+          <button className="bg-[#23A6F0] px-[20px] py-[10px] text-white text-sm font-bold rounded">
+            Filter
+          </button>
+        </div>
+      </div>
       <ProductList />
       <PaginationCmp />
       <Icons />

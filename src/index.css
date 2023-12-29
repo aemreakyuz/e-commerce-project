@@ -7,6 +7,6 @@
     @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
   }
   .nav-bar-links {
-    @apply text-[14px] font-bold text-[#737373];
+    @apply text-[14px] font-bold text-[#737373] max-sm:text-[30px] max-sm:text-[#737373] max-sm:font-normal;
   }
 }
