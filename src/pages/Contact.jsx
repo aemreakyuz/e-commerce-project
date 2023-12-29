@@ -6,18 +6,16 @@ import Header from "../layout/Header";
 function Contact() {
   return (
     <>
-      <Header />
-      <NavBar />
-      <div className="h-full flex">
+      <div className="h-full flex max-sm:flex-col">
         <div
-          className="bg-cover bg-center relative w-full"
+          className="bg-cover bg-center relative w-full "
           style={{ backgroundImage: `url('${Images.sliders.slider1}')` }}
         >
-          <div className="w-full h-full z-30 bg-gradient-to-r from-black flex flex-col justify-center items-center">
-            <div className="flex flex-wrap items-center justify-evenly gap-[30px] text-white w-[90%] py-[112px]">
-              <div className="flex flex-col gap-[36px]  basis-1/2">
+          <div className="w-full h-full z-30 bg-gradient-to-r from-black flex flex-col justify-center items-center ">
+            <div className="flex flex-wrap items-center justify-evenly gap-[30px] text-white w-[90%] py-[112px] max-sm:text-center max-sm:w-4/5">
+              <div className="flex flex-col gap-[36px]  basis-1/2 max-sm:basis-0">
                 <h1 className="z-20 font-bold text-[40px]">CONTACT US</h1>
-                <p className="w-[70%]">
+                <p className=" max-sm:text-center">
                   Problems trying to resolve the conflict between the two major
                   realms of Classical physics: Newtonian mechanics.
                 </p>
