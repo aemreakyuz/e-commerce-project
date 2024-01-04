@@ -7,9 +7,9 @@ function SignUp() {
     register,
     handleSubmit,
     watch,
-    isValid,
-    formState: { errors },
-  } = useForm();
+
+    formState: { errors, isValid },
+  } = useForm({ mode: "onBlur" });
   const onSubmit = (data) => console.log(data);
   console.log(errors);
 
@@ -121,11 +121,14 @@ function SignUp() {
             type="password"
             placeholder="Enter your password"
             {...register("passwordConfirmation", {
-              validate: (fieldValue) => {
-                return "Password does not match";
+              validate: (password) => {
+                return (
+                  watch("password") === password || "Password does not match."
+                );
               },
             })}
           />
+
           {errors["passwordConfirmation"] && (
             <p role="alert" className="ml-3 text-sm font-bold text-red-600 ">
               {errors["passwordConfirmation"]?.message}
