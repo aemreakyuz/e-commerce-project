@@ -11,6 +11,7 @@ import Team from "./pages/Team";
 import About from "./pages/About";
 import ProductListPage from "./pages/ProductListPage";
 import { Data } from "./assets/Data";
+import SignUp from "./pages/SignUp";
 
 function App() {
   const teamMember = Data.team;
@@ -23,6 +24,9 @@ function App() {
         </Route>
         <Route path="/contact">
           <Contact />
+        </Route>
+        <Route path="/signup">
+          <SignUp />
         </Route>
         <Route path="/about">
           <About teamMember={teamMember} />
