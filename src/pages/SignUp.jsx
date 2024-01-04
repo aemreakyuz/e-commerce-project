@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
 import { Link, useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import Header from "../layout/Header";
 import NavBar from "../layout/NavBar";
+import axiosInstance from "../api/axios";
 
 export default function SignUp() {
   const {
@@ -14,9 +15,33 @@ export default function SignUp() {
     formState: { errors, isValid },
   } = useForm({ mode: "onBlur" });
 
+  const [isLoading, setIsLoading] = useState(false);
+  const [userData, setUserData] = useState({});
+
   const onSubmit = (data) => {
-    console.log(data);
-    console.log(errors);
+    setIsLoading(true);
+
+    if (data.role === "customer" || data.role === "admin") {
+      axiosInstance
+        .post("/signup", data)
+        .then((res) => {
+          console.log("Server response:", res.data);
+          setUserData({
+            name: res.name,
+            email: res.email,
+            password: res.password,
+            role_id: res.role === "admin" || "customer",
+          });
+          setIsLoading(false);
+        })
+        .catch((err) => {
+          console.log("Error:", err.message);
+          setIsLoading(false);
+        });
+    } else {
+      setIsLoading(false);
+    }
+    console.log({ userData });
   };
 
   const roles = ["Admin", "Store"];
@@ -28,7 +53,7 @@ export default function SignUp() {
       <div className="flex bg-[#23856D] h-full w-full py-16 ">
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col gap-4 mx-auto "
+          className="flex flex-col gap-2 mx-auto "
         >
           <div>
             <label
@@ -51,7 +76,7 @@ export default function SignUp() {
               })}
             />
             {errors["name"] && (
-              <p role="alert" className="ml-3 text-sm font-bold text-red-600 ">
+              <p role="alert" className="ml-3 text-md  text-red-600 pt-2 ">
                 {errors["name"]?.message}
               </p>
             )}
@@ -79,7 +104,7 @@ export default function SignUp() {
               })}
             />
             {errors["email"] && (
-              <p role="alert" className="ml-3 text-sm font-bold text-red-600 ">
+              <p role="alert" className="ml-3 text-sm  text-red-600 pt-2 ">
                 {errors["email"]?.message}
               </p>
             )}
@@ -112,7 +137,7 @@ export default function SignUp() {
               })}
             />
             {errors["password"] && (
-              <p role="alert" className="ml-3 text-sm font-bold text-red-600 ">
+              <p role="alert" className="ml-3 text-sm  text-red-600 pt-2 ">
                 {errors["password"]?.message}
               </p>
             )}
@@ -139,7 +164,7 @@ export default function SignUp() {
             />
 
             {errors["passwordConfirmation"] && (
-              <p role="alert" className="ml-3 text-sm font-bold text-red-600 ">
+              <p role="alert" className="ml-3 text-sm  text-red-600 pt-2 ">
                 {errors["passwordConfirmation"]?.message}
               </p>
             )}
@@ -152,7 +177,7 @@ export default function SignUp() {
               Role
             </label>
             <select
-              id="role"
+              id="role_id"
               value={watch("role") || "customer"}
               {...register("role")}
               className="bg-white w-1/2 content-center text-base px-4 py-2 border-b rounded-2xl border-gray-300 focus:outline-none "
@@ -175,7 +200,7 @@ export default function SignUp() {
               )}
             </select>
             {watch("role")?.toLowerCase() === "store" && (
-              <>
+              <div className="flex flex-col gap-2 pt-2">
                 <div className="">
                   <label
                     htmlFor="storeName"
@@ -208,7 +233,7 @@ export default function SignUp() {
                   {errors["storeName"] && (
                     <p
                       role="alert"
-                      className="ml-3 text-sm font-bold text-red-600 "
+                      className="ml-3 text-sm  text-red-600 pt-2 "
                     >
                       {errors["storeName"]?.message}
                     </p>
@@ -241,7 +266,7 @@ export default function SignUp() {
                   {errors["storePhone"] && (
                     <p
                       role="alert"
-                      className="ml-3 text-sm font-bold text-red-600 "
+                      className="ml-3 text-sm  text-red-600 pt-2 "
                     >
                       {errors["storePhone"]?.message}
                     </p>
@@ -273,7 +298,7 @@ export default function SignUp() {
                   {errors["storeTaxNumber"] && (
                     <p
                       role="alert"
-                      className="ml-3 text-sm font-bold text-red-600 "
+                      className="ml-3 text-sm  text-red-600 pt-2 "
                     >
                       {errors["storeTaxNumber"]?.message}
                     </p>
@@ -306,13 +331,13 @@ export default function SignUp() {
                   {errors["storeIBAN"] && (
                     <p
                       role="alert"
-                      className="ml-3 text-sm font-bold text-red-600 "
+                      className="ml-3 text-sm  text-red-600 pt-2 "
                     >
                       {errors["storeIBAN"]?.message}
                     </p>
                   )}
                 </div>
-              </>
+              </div>
             )}
           </div>
           <button
