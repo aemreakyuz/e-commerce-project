@@ -27,7 +27,7 @@ const items = [
       "We know how large objects will act, but things on a small scale.",
     altText: "Slide 1",
     caption: "Slide 1",
-    key: 1,
+    key: 2,
   },
 ];
 

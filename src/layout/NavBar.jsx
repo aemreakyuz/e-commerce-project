@@ -56,7 +56,7 @@ function NavBar() {
             icon={faUser}
             style={{ color: "#23a6f0", width: "12px" }}
           />
-          <NavLink to="/">Login / Register</NavLink>
+          <NavLink to="/signup">Login / Register</NavLink>
         </div>
         <div className="flex gap-8 items-center">
           <FontAwesomeIcon
