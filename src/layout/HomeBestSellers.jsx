@@ -13,7 +13,7 @@ function HomeBestSellers() {
           BESTSELLER PRODUCTS
         </h2>
         <h4 className="text-[14px] text-[#737373] text-center">
-          Problems trying to resolve the conflict between testtest
+          Problems trying to resolve the conflict between devtest
         </h4>
       </div>
       <div className="">
