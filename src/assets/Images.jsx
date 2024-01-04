@@ -64,6 +64,8 @@ import about from "../assets/images/aboutpage/about.png";
 import aboutHeader from "../assets/images/aboutpage/about-us-bg.png";
 import aboutBg from "../assets/images/aboutpage/unsplash_T_Qe4QlMIvQ.png";
 
+import productDescription from "../assets/images/productdescription.png";
+
 import {
   faTwitter,
   faFacebook,
@@ -87,7 +89,9 @@ export const Images = {
     teamPage4,
     teamPage5,
   },
-
+  productPage: {
+    productDescription,
+  },
   teamMembers: {
     team1,
     team2,
