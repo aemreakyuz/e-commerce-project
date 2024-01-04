@@ -5,6 +5,7 @@ import { Link, useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import Header from "../layout/Header";
 import NavBar from "../layout/NavBar";
 import axiosInstance from "../api/axios";
+import Footer from "../layout/Footer";
 
 export default function SignUp() {
   const {
@@ -27,10 +28,10 @@ export default function SignUp() {
         .then((res) => {
           console.log("Server response:", res.data);
           setUserData({
-            name: res.name,
-            email: res.email,
-            password: res.password,
-            role_id: res.role === "admin" || "customer",
+            name: data.name,
+            email: data.email,
+            password: data.password,
+            role_id: data.role === "admin" || "customer",
           });
           setIsLoading(false);
         })
@@ -349,6 +350,7 @@ export default function SignUp() {
           </button>
         </form>
       </div>
+      <Footer />
     </>
   );
 }

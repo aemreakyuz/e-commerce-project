@@ -31,7 +31,7 @@ function App() {
         <Route path="/about">
           <About teamMember={teamMember} />
         </Route>
-        <Route path="/product">
+        <Route path="/product/:id">
           <Product />
         </Route>
         <Route path="/productList">

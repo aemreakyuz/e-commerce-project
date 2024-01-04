@@ -235,6 +235,8 @@ export const Data = {
   ],
   productList: [
     {
+      key: 1,
+      id: 1,
       name: "Graphic Design",
       category: "English Department",
       price: 16.48,
@@ -248,6 +250,8 @@ export const Data = {
       img: Images.productList.productList1,
     },
     {
+      key: 2,
+      id: 2,
       name: "Graphic Design",
       category: "English Department",
       price: 16.48,
@@ -261,6 +265,8 @@ export const Data = {
       img: Images.productList.productList2,
     },
     {
+      key: 3,
+      id: 3,
       name: "Graphic Design",
       category: "English Department",
       price: 16.48,
@@ -274,6 +280,8 @@ export const Data = {
       img: Images.productList.productList3,
     },
     {
+      key: 4,
+      id: 4,
       name: "Graphic Design",
       category: "English Department",
       price: 16.48,
@@ -287,6 +295,8 @@ export const Data = {
       img: Images.productList.productList4,
     },
     {
+      id: 5,
+      key: 5,
       name: "Graphic Design",
       category: "English Department",
       price: 16.48,
@@ -300,6 +310,8 @@ export const Data = {
       img: Images.productList.productList5,
     },
     {
+      key: 6,
+      id: 6,
       name: "Graphic Design",
       category: "English Department",
       price: 16.48,
@@ -313,6 +325,8 @@ export const Data = {
       img: Images.productList.productList6,
     },
     {
+      key: 7,
+      id: 7,
       name: "Graphic Design",
       category: "English Department",
       price: 16.48,
@@ -326,6 +340,8 @@ export const Data = {
       img: Images.productList.productList7,
     },
     {
+      key: 8,
+      id: 8,
       name: "Graphic Design",
       category: "English Department",
       price: 16.48,
@@ -339,6 +355,8 @@ export const Data = {
       img: Images.productList.productList8,
     },
     {
+      key: 9,
+      id: 9,
       name: "Graphic Design",
       category: "English Department",
       price: 16.48,
@@ -352,6 +370,8 @@ export const Data = {
       img: Images.productList.productList9,
     },
     {
+      key: 10,
+      id: 10,
       name: "Graphic Design",
       category: "English Department",
       price: 16.48,
@@ -365,6 +385,8 @@ export const Data = {
       img: Images.productList.productList10,
     },
     {
+      key: 11,
+      id: 11,
       name: "Graphic Design",
       category: "English Department",
       price: 16.48,
@@ -378,6 +400,8 @@ export const Data = {
       img: Images.productList.productList11,
     },
     {
+      key: 12,
+      id: 12,
       name: "Graphic Design",
       category: "English Department",
       price: 16.48,
