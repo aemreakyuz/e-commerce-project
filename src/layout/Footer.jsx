@@ -100,15 +100,15 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div class=" flex flex-col ">
+          <div className=" flex flex-col ">
             <div>
-              <label for="email" className="  ">
+              <label htmlFor="contactEmail" className="  ">
                 Get In Touch
               </label>
-              <div class="flex pt-[14px] ">
+              <div className="flex pt-[14px] ">
                 <input
                   type="email"
-                  id="email"
+                  id="contactEmail"
                   name="email"
                   className="bg-[#F9F9F9] border border-gray-300 rounded-l-md px-4 w-[250px] h-[58px] font-normal "
                   placeholder="Your Email"

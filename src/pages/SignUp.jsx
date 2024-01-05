@@ -90,11 +90,10 @@ export default function SignUp() {
               Email
             </label>
             <input
-              autoComplete="true"
               id="email"
               className=" bg-white w-full text-base px-4 py-2 border-b border-gray-300 focus:outline-none rounded-2xl "
               type="email"
-              placeholder="Enter your mail"
+              placeholder="Enter your email"
               {...register("email", {
                 required: { value: true, message: "Email is required" },
                 pattern: {
@@ -192,9 +191,9 @@ export default function SignUp() {
                 Customer
               </option>
               {roles.map(
-                (role) =>
+                (role, index) =>
                   role !== "customer" && (
-                    <option key={role.id} className="bg-white">
+                    <option key={index} className="bg-white">
                       {role.charAt(0).toUpperCase() + role.slice(1)}
                     </option>
                   )
@@ -344,7 +343,7 @@ export default function SignUp() {
           <button
             type="submit"
             disabled={!isValid}
-            className="w-full flex justify-center text-2xl bg-gradient-to-r disabled:opacity-50 from-green-500 to-green-600  hover:bg-gradient-to-l hover:from-green-500 hover:to-green-600 text-gray-100 p-3  rounded-full  font-semibold  shadow-lg cursor-pointer transition ease-in duration-300"
+            className="w-full flex justify-center text-2xl bg-gradient-to-r disabled:opacity-50 hover:bg-green-500   text-gray-100 p-3  rounded-full  font-semibold  shadow-lg cursor-pointer transition ease-in duration-200"
           >
             Sign up
           </button>
