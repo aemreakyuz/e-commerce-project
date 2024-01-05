@@ -17,22 +17,23 @@ export default function SignUp() {
   } = useForm({ mode: "onBlur" });
 
   const [isLoading, setIsLoading] = useState(false);
-  const [userData, setUserData] = useState({});
 
   const onSubmit = (data) => {
     setIsLoading(true);
 
     if (data.role === "customer" || data.role === "admin") {
+      const userData = {
+        name: data.name,
+        email: data.email,
+        password: data.password,
+        role_id: data.role,
+      };
+      console.log(data);
       axiosInstance
-        .post("/signup", data)
+        .post("/signup", userData)
         .then((res) => {
           console.log("Server response:", res.data);
-          setUserData({
-            name: data.name,
-            email: data.email,
-            password: data.password,
-            role_id: data.role === "admin" || "customer",
-          });
+
           setIsLoading(false);
         })
         .catch((err) => {
@@ -42,7 +43,6 @@ export default function SignUp() {
     } else {
       setIsLoading(false);
     }
-    console.log({ userData });
   };
 
   const roles = ["Admin", "Store"];
@@ -65,7 +65,7 @@ export default function SignUp() {
             </label>
             <input
               id="name"
-              className=" bg-white w-full text-base px-4 py-2 border-b border-gray-300 focus:outline-none rounded-2xl "
+              className=" bg-white w-full text-base px-4 py-2 border-b border-gray-300  rounded-2xl "
               type="text"
               placeholder="Enter your full name"
               {...register("name", {
@@ -342,7 +342,7 @@ export default function SignUp() {
           </div>
           <button
             type="submit"
-            disabled={!isValid}
+            // disabled={!isValid}
             className="w-full flex justify-center text-2xl bg-gradient-to-r disabled:opacity-50 hover:bg-green-500   text-gray-100 p-3  rounded-full  font-semibold  shadow-lg cursor-pointer transition ease-in duration-200"
           >
             Sign up

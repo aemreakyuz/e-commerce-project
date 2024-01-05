@@ -6,8 +6,8 @@ function Categories() {
   const categories = Data.categories;
   return (
     <div className="flex flex-wrap gap-[15px] pb-[48px] justify-center bg-[#FAFAFA] max-sm:pt-[24px] ">
-      {categories.map((category) => {
-        return <CategoryCard category={category} />;
+      {categories.map((category, index) => {
+        return <CategoryCard category={category} key={index} />;
       })}
     </div>
   );
