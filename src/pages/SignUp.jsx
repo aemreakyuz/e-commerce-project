@@ -17,6 +17,7 @@ export default function SignUp() {
   } = useForm({ mode: "onBlur" });
 
   const [isLoading, setIsLoading] = useState(false);
+  const history = useHistory();
 
   const onSubmit = (data) => {
     setIsLoading(true);
@@ -35,6 +36,7 @@ export default function SignUp() {
           console.log("Server response:", res.data);
 
           setIsLoading(false);
+          history.push("/");
         })
         .catch((err) => {
           console.log("Error:", err.message);

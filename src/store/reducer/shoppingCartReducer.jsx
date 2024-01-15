@@ -1,7 +1,7 @@
 const initialState = {
   cart: [],
   payment: {},
-  address: [],
+  address: {},
 };
 
 const shoppingCartReducer = (state = initialState, action) => {
